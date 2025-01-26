@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Article preview component | David Sibrian</title>
+</head>
+
+<body>
+
+  <main>
+    <article class="reading-article">
+      <div class="reading-article__picture">
+        <img src="./images/drawers.jpg" alt="">
+      </div>
+      <section class="article-info">
+
+        <h2 class="reading-article__title">Shift the overall look and feel by adding these wonderful touches to
+          furniture
+          in your home</h2>
+        <p class="reading-article__paragraph">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+
+        <!-- 
+          This element's hidden on mobile version, it's going to appear when the icon share button is clicked,
+          it's attached to other element but the principal parent, put it behind 'author-info'.
+          On desktop version, it moves on top of share icon, I may use clip path to make a comment figure.
+          It's a independent element, so in mob, its actual background container will be equal to.
+          -->
+      </section>
+
+      <section class="contenedor">
+        <div class="contenido">
+          <section class="social-media hidden">
+            Share
+            <a href="#" rel="noopener"><img src="./images/icon-facebook.svg" alt=""></a>
+            <a href="#" rel="noopener"><img src="./images/icon-twitter.svg" alt=""></a>
+            <a href="#" rel="noopener"><img src="./images/icon-pinterest.svg" alt=""></a>
+          </section>
+          <section class="author-info">
+            <img src="./images/avatar-michelle.jpg" class="author-info__picture" alt="author avatar-michelle">
+            <div>
+              <p class="author-info__name">Michelle Appleton</p>
+              <p class="reading-article__posted-date">28 Jun 2020</p>
+            </div>
+          </section>
+        </div>
+        <div class="share-btn"></div>
+      </section>
+
+    </article>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- 
+<section class="footer">
+
+  <div class="content-cont">
+
+    <section class="author-info">
+      <img src="./images/avatar-michelle.jpg" class="author-info__picture" alt="author avatar-michelle">
+      <div>
+        <p class="author-info__name">Michelle Appleton</p>
+        <p class="reading-article__posted-date">28 Jun 2020</p>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="social-media hidden">
+    Share
+    <span><img src="./images/icon-facebook.svg" alt=""></span>
+    <span><img src="./images/icon-twitter.svg" alt=""></span>
+    <span><img src="./images/icon-pinterest.svg" alt=""></span>
+  </section>
+
+  <div class="share-btn"></div>
+
+</section> -->
