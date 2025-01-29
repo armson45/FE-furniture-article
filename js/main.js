@@ -1,26 +1,13 @@
 const d = document;
-
-let html =
-  `
-    <section class="social-media hidden">
-    Share
-    <span><img src="./images/icon-facebook.svg" alt=""></span>
-    <span><img src="./images/icon-twitter.svg" alt=""></span>
-    <span><img src="./images/icon-pinterest.svg" alt=""></span>
-    </section>
-  `;
-
-
-
-
-
-
-
+let bpWidth = window.innerWidth;
 
 d.addEventListener('click', e => {
-  console.log(e.target);
-  if (e.target.matches('.share-btn')) {
+  if (e.target.matches('.share-btn') && bpWidth < 1200) {
     d.querySelector('.social-media').classList.toggle('hidden');
     d.querySelector('.author-info').classList.toggle('hidden');
+  }
+  if (e.target.matches('.share-btn') && bpWidth > 1200) {
+    d.querySelector('.triangle').classList.toggle('hidden');
+    d.querySelector('.social-media').classList.toggle('hidden');
   }
 });
